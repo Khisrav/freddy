@@ -1,0 +1,21 @@
+body {
+}
+input, select, textarea {
+	width: 100%;
+	margin-bottom: 8px;
+}
+.header {
+	padding-top: 32px;
+}
+.header-logo {
+	text-align: center;
+}
+.header-menu {
+
+}
+.header-menu__item {
+	display: inline-block;
+}
+.header-social img {
+	width: 64px;
+}

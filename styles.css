@@ -1,0 +1,871 @@
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f00;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c33;
+}
+
+.soon p {
+  font-size: 24px;
+    background: #aaa;
+    font-family: monospace;
+    padding: 120px 16px;
+    color: #000;
+}
+
+.scary-bg {
+  background: url(img/hero-bg.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin:0;
+  padding:0;
+  font-family: "TT Norms Pro", sans-serif;
+  font-size:16px;
+  background: #000;
+  color: #fff;
+  scrollbar-color: #f00;
+}
+
+table {width: 100%;text-align: center;}
+tr td {padding: 8px 0;}
+thead tr td {font-weight: bold;}
+
+h1, h2, h3, h4, h5, h6, .nav-brand {
+}
+
+header {
+  position: fixed;
+  line-height: 100px;
+  width:100%;
+  backdrop-filter: blur(8px);
+  background: rgba(0,0,0,.15);
+  z-index: 999;
+}
+
+section {
+  padding: 100px 0;
+}
+
+header div div a {
+  float:left;
+}
+
+footer {
+  background: #000;
+  padding: 32px 0;
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+.mobile-hidden, .hide-on-mobile {
+  display: none;
+}
+.desktop-hidden {
+  display: block;
+}
+
+.owl-stage-outer {
+  border-radius: 16px;
+}
+@keyframes elements {
+  0% {
+    top: 0;
+    left: 0;
+  } 100% {
+    top: -15px;
+    left: -15px;
+  }
+}
+
+.element {
+  background: #000;
+  color: #fff;
+  transition: all .5s ease 0s;
+  padding: 15px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  box-shadow: 8px 8px 0 #f00;
+  position: relative;
+  width: calc(100% - 30px);
+  margin-left: 15px;
+  margin-bottom: 30px;
+  height: 50px;
+  overflow: hidden;
+}
+.element:hover {
+  box-shadow: 16px 16px 0 #f00;
+  cursor: pointer;
+}
+.element h3 {
+  margin-top: 0;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+.element .table {
+  transition: all .5s ease 0s;
+}
+.active {
+}
+
+h1 {
+  font-size: 55px;
+} h2 {
+  font-size: 40px;
+}
+
+h1::first-letter, h2::first-letter, h3::first-letter {
+  color: #f00;
+}
+
+.social, .footer-social {
+  text-align: center;
+}
+.social span a img, .footer-social span a img {
+  width: 64px;
+  margin: 0 16px;
+}
+
+
+@media (max-width: 768px){
+  .mobile-hidden {
+    display: block;
+  } .roadmap div {
+    border: none !important;
+  }
+  h1 {
+    font-size: 40px !important;
+  } h2 {
+    font-size: 32px !important;
+  }
+}
+@media (min-width: 769px){
+  .desktop-hidden {
+    display: none;
+  } .hide-on-mobile {
+    display: block
+  }
+}
+
+.nav-menu .nav-menu__items {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+  float:right;
+  padding:0;
+  list-style:none;
+  margin-top:-100px;
+}
+
+.nav-menu__last-child{
+  padding-right: 0 !important;
+}
+
+.nav-menu__items li a {
+  margin:0;
+  padding:0 16px;
+  float:left;
+  color: #fff !important;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all .5s ease 0s;
+}
+
+.nav-menu__items li a:hover {
+  border-bottom: 2px solid #f00;
+}
+
+.nav-brand {
+  font-size:24px;
+  color:#fff;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.hero {
+  color:#fff;
+  background: url(img/hero-bg.jpg);/*linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)*/;
+  /*background-size: 400% 400%;
+  animation: gradient 15s ease infinite;*/
+  background-size: cover;
+  background-position: calc(50% - 64px);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.section-light {
+  background: #fff;
+  color: #000;
+}
+
+.half-transparent {
+  background: rgba(0, 0, 0, .5);
+}
+
+.hero .half-transparent {
+  background: linear-gradient(270deg, transparent, black);
+  margin:-100px 0;
+  padding:200px 0;
+}
+
+.hero div .container .row div {
+  /*display: flex;
+  align-items: center;*/
+}
+button, .btn, .btn-outline {
+  padding: 20px 45px;
+  border: 1px solid #999999;
+  display: inline-block;
+  position: relative;
+  background: white;
+  color: #999999;
+}
+.btn, .btn-outline {
+  margin:4px;
+  display: inline-block;
+}
+
+.btn {
+  height:50px;
+  font-size:16px;
+  font-weight: bold;
+  background: #f00;
+  border:2px solid #f00;
+  color:#fff !important;
+  text-decoration: none;
+  outline: none;
+  padding:16px 30px;
+  border-radius: 16px 0 16px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.75s ease 0s;
+  box-shadow: 0 0 8px #f00;
+}
+.btn:hover {
+  color:#fff !important;
+  background: transparent;
+  border-color: #fff;
+  box-shadow: 0 0 24px #f00;
+}
+
+.btn-outline {
+  height:50px;
+  font-size:16px;
+  font-weight: bold;
+  background: transparent;
+  border:2px solid #fff;
+  color:#fff !important;
+  text-decoration: none;
+  outline: none;
+  padding:16px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.5s ease 0s;
+  border-radius: 16px 0 16px 0;
+  box-shadow: 0 0 8px #f00;
+}
+
+.btn-outline:hover {
+  background: #f00;
+  border-color: #f00;
+  box-shadow: 0 0 24px #f00;
+}
+
+.section-2 .half-transparent {
+  margin:-100px 0;
+  min-height: 800px;
+  padding-top: 170px;
+  background: rgba(0,0,0,0.5);
+}
+.btn-footer {
+  padding: 16px 32px;
+  color: #f00;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 2px solid #f00;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #fff;
+  border-bottom-right-radius: 16px;
+  border-top-left-radius: 16px;
+  box-shadow: 8px 8px 0 #000;
+  transition: all .5s ease 0s;
+}
+.btn-footer:hover {
+  box-shadow: -8px -8px 0 #000;
+  background:#000;
+}
+
+
+/*MOBILE MENU*/
+.drawer-list {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  transform: translate(100vw, 0);
+  /* ie workaround */
+  -ms-transform: translatex(-100vw);
+  box-sizing: border-box;
+  pointer-events: none;
+  padding-top: 125px;
+  transition: width 475ms ease-out, transform 450ms ease, border-radius .8s .1s ease;
+  border-bottom-left-radius: 100vw;
+  background-color: rgba(0,0,0,.75);
+}
+@media (min-width: 768px) {
+  .drawer-list {
+    width: 40vw;
+  }
+}
+.drawer-list ul {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  overflow-x: hidden;
+  pointer-events: auto;
+}
+.drawer-list li {
+  list-style: none;
+  text-transform: uppercase;
+  pointer-events: auto;
+  white-space: nowrap;
+  box-sizing: border-box;
+  line-height: 48px;
+  transform: translatex(100vw);
+  /* ie workaround */
+  -ms-transform: translatex(-100vw);
+}
+.drawer-list li:last-child {
+  margin-bottom: 2em;
+}
+.drawer-list li a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  display: block;
+  padding: .5rem;
+  font-size: calc(24px - .5vw);
+  transition: all .75s ease-out 0s;
+  border-bottom: 2px solid transparent;
+}
+@media (min-width: 768px) {
+  .drawer-list li a {
+    text-align: right;
+    padding: .2rem;
+  }
+}
+.drawer-list li a:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #f00;
+}
+
+input.hamburger {
+  display: none;
+}
+input.hamburger:checked ~ .drawer-list {
+  transform: translatex(0);
+  border-bottom-left-radius: 0;
+}
+input.hamburger:checked ~ .drawer-list li {
+  transform: translatex(0);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(1) {
+  transition: transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(2) {
+  transition: transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(3) {
+  transition: transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(4) {
+  transition: transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(5) {
+  transition: transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(6) {
+  transition: transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(7) {
+  transition: transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(8) {
+  transition: transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(9) {
+  transition: transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(10) {
+  transition: transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(11) {
+  transition: transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(12) {
+  transition: transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(13) {
+  transition: transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(14) {
+  transition: transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(15) {
+  transition: transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(16) {
+  transition: transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(17) {
+  transition: transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(18) {
+  transition: transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(19) {
+  transition: transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(20) {
+  transition: transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(21) {
+  transition: transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(22) {
+  transition: transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(23) {
+  transition: transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(24) {
+  transition: transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(25) {
+  transition: transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(26) {
+  transition: transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(27) {
+  transition: transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(28) {
+  transition: transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(29) {
+  transition: transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(30) {
+  transition: transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(31) {
+  transition: transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(32) {
+  transition: transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(33) {
+  transition: transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(34) {
+  transition: transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(35) {
+  transition: transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(36) {
+  transition: transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(37) {
+  transition: transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(38) {
+  transition: transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(39) {
+  transition: transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(40) {
+  transition: transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(41) {
+  transition: transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(42) {
+  transition: transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(43) {
+  transition: transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(44) {
+  transition: transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(45) {
+  transition: transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(46) {
+  transition: transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(47) {
+  transition: transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(48) {
+  transition: transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(49) {
+  transition: transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li:nth-child(50) {
+  transition: transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+input.hamburger:checked ~ .drawer-list li a {
+  padding-right: 15px;
+}
+input.hamburger:checked ~ label > i {
+  background-color: transparent;
+  transform: rotate(90deg);
+}
+input.hamburger:checked ~ label > i:before {
+  transform: translate(-50%, -50%) rotate(315deg);
+}
+input.hamburger:checked ~ label > i:after {
+  transform: translate(-50%, -50%) rotate(-315deg);
+}
+input.hamburger:checked ~ label close {
+  color: #FEFEFE;
+  width: 100%;
+}
+input.hamburger:checked ~ label open {
+  color: transparent;
+  width: 0;
+}
+
+label.hamburger {
+  z-index: 9999;
+  position: relative;
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+label.hamburger:hover {
+  cursor: pointer;
+}
+label.hamburger text close,
+label.hamburger text open {
+  text-transform: uppercase;
+  font-size: .8em;
+  align-text: center;
+  position: absolute;
+  transform: translateY(50px);
+  text-align: center;
+  overflow: hidden;
+  transition: width .25s .35s, color .45s .35s;
+}
+label.hamburger text close {
+  color: transparent;
+  right: 0;
+  width: 0;
+}
+label.hamburger text open {
+  color: #FEFEFE;
+  width: 100%;
+}
+label.hamburger > i {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  background-color: #fff;
+  pointer-events: auto;
+  transition-duration: .35s;
+  transition-delay: .35s;
+}
+label.hamburger > i:before, label.hamburger > i:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  left: 50%;
+  background-color: #f00;
+  content: "";
+  transition: transform 0.35s;
+  transform-origin: 50% 50%;
+}
+label.hamburger > i:before {
+  transform: translate(-50%, -14px);
+}
+label.hamburger > i:after {
+  transform: translate(-50%, 14px);
+}
+
+label.hamburger {
+  position: fixed;
+  top: 26px;
+  right: 15px;
+}
+
+/*LOADER*/
+.loader {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+}
+.sk-folding-cube {
+  width: 4em;
+  height: 4em;
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 32px);
+  margin: auto;
+  -webkit-transform: rotateZ(45deg) translate(-50%, -50%);
+  transform: rotateZ(45deg) translate(-50%, -50%);
+}
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f00;
+  -webkit-animation: sk-folding-cube-angle 2.4s infinite linear both;
+          animation: sk-folding-cube-angle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube-2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube-3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube-4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube-2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube-3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.sk-folding-cube .sk-cube-4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+@-webkit-keyframes sk-folding-cube-angle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  }
+  25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  }
+  90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-folding-cube-angle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  }
+  25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  }
+  90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+/*ACCORDION Styles*/
+.accordion-container {
+    position: relative;
+    width: 100%;
+    border-top: none;
+    outline: 0;
+    cursor: pointer;
+    /*
+    overflow: hidden;
+    border-radius: 16px;*/
+}
+
+.accordion-container .article-title {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0.625em 0.625em 0.625em 2em;
+    font-size: 1.25em;
+    font-weight: normal;
+    color: #000;
+    cursor: pointer;
+    background: #fff;
+    transition: all .5s ease 0s;
+}
+
+.accordion-container .content-entry {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border-bottom-right-radius: 20%;
+  overflow: hidden;
+}
+
+.accordion-container .article-title:hover,
+.accordion-container .article-title:active,
+.accordion-container .content-entry.open .article-title {
+    background-color: #f00;
+    color: #fff;
+}
+
+.accordion-container .article-title:hover i:before,
+.accordion-container .article-title:hover i:active,
+.accordion-container .content-entry.open i {
+    color: #fff;
+}
+
+.accordion-container .content-entry i {
+    position: absolute;
+    top: 3px;
+    left: 12px;
+    font-style: normal;
+    font-size: 1.625em;
+    sans-serif;
+    color: #000;
+}
+
+.accordion-container .content-entry i:before {
+    content: "+ ";
+}
+
+.accordion-container .content-entry.open i:before {
+    content: "- ";
+}
+
+.accordion-content {
+    display: none;
+    background: rgba(255,0,0,.5);
+}
+
+.accordion-container p {
+  padding: 16px;
+  margin: 0;
+}
+
+#content {
+    width: 100%;
+}
+
+.accordion-container,
+#description {
+    width: 90%;
+    margin: 1.875em auto;
+}
+
+#description p {
+    line-height: 1.5;
+}
+
+#description h2 {
+    text-align: center;
+}
+
+@media all and (min-width: 860px) {
+    #content {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+/*ROADMAP*/
+.roadmap-number {
+  font-size: 128px;
+  font-weight: bold;
+  color: #f00;
+  height: 100%;
+  vertical-align: middle;
+  display: block;
+  padding: 16px;
+  transform: translateY(calc(50% - 100px));
+  text-shadow: 8px 8px 0px #bfbfbf;
+}
+
+.roadmap .col-md-9 {
+  font-size: 24px;
+}
+
+.roadmap .col-md-5::first-letter {
+  color: #f00;
+}

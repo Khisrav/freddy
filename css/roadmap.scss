@@ -1,0 +1,104 @@
+.Roadmap {
+  position: relative;
+  padding: 160px 0 60px 0;
+  background: #000;
+  color: white;
+  &__katana {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    max-width: 300px;
+    z-index: 0;
+  }
+  &__title {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 120px;
+  }
+  &__pagination-bullets {
+    position: sticky;
+
+    top: 5vh;
+    height: 90vh;
+    left: 0;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    .bullet {
+      width: 20px;
+      height: 20px;
+      max-height: 20px;
+      background-color: transparent;
+      border: 1px solid grey;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      transition: all 0.5s;
+      &.active {
+        border: 1px solid transparent;
+        height: 40px;
+        max-height: 40px;
+        background-color: red;
+      }
+    }
+  }
+  &__box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 10px;
+  }
+  &__mapSide {
+    width: 90%;
+  }
+  &__stickyImage {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    padding: 160px 0;
+    &__box {
+      column-gap: 60px;
+    }
+    &__katana {
+      max-width: 575px;
+      position: absolute;
+      top: 0;
+      left: 10%;
+      width: 30%;
+    }
+    &__mapSide {
+      width: 50%;
+    }
+    &__title {
+      text-align: center;
+      font-size: 120px;
+      padding-bottom: 120px;
+    }
+    &__stickyImage {
+      display: flex;
+      align-items: center;
+      height: 90vh;
+      flex-shrink: 0;
+      width: 25%;
+      position: sticky;
+      top: 5vh;
+      // transform: translateY(-50%);
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__pagination-bullets {
+      width: 15%;
+    }
+  }
+}
