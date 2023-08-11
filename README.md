@@ -1,0 +1,1 @@
+# Freddy NFT Landing Page
